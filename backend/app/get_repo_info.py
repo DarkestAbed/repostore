@@ -1,6 +1,6 @@
 import subprocess
 
-from app.exceptions import RemoteRepoNotFound
+from utils.exceptions import RemoteRepoNotFound
 from utils.parse_json_data import parse_repo_json_data
 
 

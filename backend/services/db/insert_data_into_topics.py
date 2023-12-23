@@ -1,8 +1,8 @@
 import logging
 import pdb
 
-from app.exceptions import NoTopicOnRepo
 from services.sqlite import SQLiteDatabase
+from utils.exceptions import NoTopicOnRepo
 
 
 async def insert_data_into_topics(db: SQLiteDatabase, repo: dict):

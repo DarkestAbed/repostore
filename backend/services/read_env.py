@@ -1,11 +1,12 @@
 import logging
 import os
 
+from dotenv import load_dotenv
+
+from utils.exceptions import NoEnvironmentFound
+
+
 def read_environ():
-    from app.exceptions import NoEnvironmentFound
-
-    from dotenv import load_dotenv
-
     # data def
     path = os.path.join(os.getcwd(), "assets")
     # execution

@@ -1,8 +1,8 @@
 import logging
 
-from app.exceptions import NoDataOnRepoDatabase
 from services.db.retrieve_all_data_from_repos import get_all_repo_data
 from services.sqlite import SQLiteDatabase
+from utils.exceptions import NoDataOnRepoDatabase
 
 
 async def add_repo_to_db(db: SQLiteDatabase):

@@ -1,6 +1,6 @@
 import logging
 
-from app.exceptions import NoDataOnRepoDatabase
+from utils.exceptions import NoDataOnRepoDatabase
 from services.sqlite import SQLiteDatabase
 
 

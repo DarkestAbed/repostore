@@ -1,11 +1,11 @@
 import logging
 import pdb
 
-from app.exceptions import ErrorAddingRepoToSQLite, RemoteRepoNotFound, RepoAlreadyExistsOnDB, NoTopicOnRepo
 from app.get_repo_info import get_repo_info
 from services.sqlite import SQLiteDatabase
 from services.db.insert_data_into_repos import insert_data_into_repos
 from services.db.insert_data_into_topics import insert_data_into_topics
+from utils.exceptions import ErrorAddingRepoToSQLite, RemoteRepoNotFound, RepoAlreadyExistsOnDB, NoTopicOnRepo
 
 
 async def add_repo_to_db(db: SQLiteDatabase, url: str):

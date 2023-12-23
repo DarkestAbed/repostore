@@ -7,13 +7,13 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.add_data_to_db import add_repo_to_db
-from app.exceptions import ErrorAddingRepoToSQLite, RemoteRepoNotFound
 from app.get_all_local_data import get_all_repo_data
 from app.get_repo_info import get_repo_info
 from services.sqlite import SQLiteDatabase
 from services.read_env import read_environ
 
 from utils.check_for_gh import check_for_gh
+from utils.exceptions import ErrorAddingRepoToSQLite, RemoteRepoNotFound
 from utils.get_jsons import get_responses
 from utils.parse_urls import parse_url
 
